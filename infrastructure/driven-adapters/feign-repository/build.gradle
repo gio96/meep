@@ -1,0 +1,7 @@
+dependencies {
+    implementation project(':domain-model')
+    //implementation 'org.springframework:spring-context:5.2.4.RELEASE'
+    implementation 'org.springframework:spring-context:5.2.0.RELEASE'
+    implementation "com.playtika.reactivefeign:feign-reactor-spring-cloud-starter:3.2.0"
+    implementation 'org.springframework.cloud:spring-cloud-starter-openfeign'
+}

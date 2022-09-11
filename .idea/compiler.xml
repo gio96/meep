@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile default="true" name="Default" enabled="true" />
+      <profile name="Gradle Imported" enabled="true">
+        <outputRelativeToContentRoot value="true" />
+        <processorPath useClasspath="false">
+          <entry name="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.projectlombok/lombok/1.18.22/9c08ea24c6eb714e2d6170e8122c069a0ba9aacf/lombok-1.18.22.jar" />
+        </processorPath>
+        <module name="meep.domain-model.main" />
+        <module name="meep.entry-points-reactive-web.test" />
+        <module name="meep.applications-meep.init.test" />
+        <module name="meep.driven-adapters-adapters-repository.test" />
+        <module name="meep.domain-model.test" />
+        <module name="meep.driven-adapters-adapters-repository.main" />
+        <module name="meep.domain-usecase.main" />
+        <module name="meep.driven-adapters-feign-repository.main" />
+        <module name="meep.applications-meep.init.main" />
+        <module name="meep.domain-usecase.test" />
+        <module name="meep.entry-points-reactive-web.main" />
+        <module name="meep.driven-adapters-feign-repository.test" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel target="11" />
+  </component>
+</project>

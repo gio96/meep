@@ -1,0 +1,44 @@
+buildscript {
+    ext {
+        springBootVersion = '2.2.5.RELEASE'
+        springCloudVersion = 'Greenwich.M1'
+        springDependencyManagementVersion = '1.0.9.RELEASE'
+    }
+//    ext.springBootVersion = '2.7.3'
+//    ext.springCloudVersion = '2021.0.3'
+//    ext.springDependencyManagementVersion = '1.0.13.RELEASE'
+    repositories {
+        mavenCentral()
+        maven { url "https://repo.spring.io/milestone" }
+        maven { url "https://repo.spring.io/snapshot" }
+    }
+    dependencies {
+        classpath("org.springframework.boot:spring-boot-gradle-plugin:${springBootVersion}")
+    }
+}
+
+plugins {
+    id "org.sonarqube" version "2.6"
+}
+
+apply from: './main.gradle'
+
+/*plugins {
+    id 'java'
+}
+
+group 'org.meep'
+version '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    testImplementation 'org.junit.jupiter:junit-jupiter-api:5.7.0'
+    testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.7.0'
+}
+
+test {
+    useJUnitPlatform()
+}*/

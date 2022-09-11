@@ -1,0 +1,5 @@
+org/meep/entities/Vehicle.java
+ org.meep.entities.Vehicle
+ org.meep.entities.Vehicle$VehicleBuilder
+org/meep/gateway/VehicleGateway.java
+ org.meep.gateway.VehicleGateway
