@@ -1,8 +1,8 @@
 package org.meep;
 
 import lombok.RequiredArgsConstructor;
-import org.meep.entities.Vehicle;
 import org.meep.usecase.VehiclesUseCase;
+import org.springframework.http.codec.ServerSentEvent;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
@@ -16,7 +16,7 @@ public class VehiclesController {
     private final VehiclesUseCase vehiclesUseCase;
 
     @GetMapping(value = "/vehicles")
-    public Flux<Vehicle> getVehicles() {
+    public Flux<ServerSentEvent<String>> getVehicles() {
         return vehiclesUseCase.getVehicles();
     }
 }
