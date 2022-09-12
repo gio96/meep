@@ -2,8 +2,8 @@ package org.meep.adapter.repository;
 
 import lombok.AllArgsConstructor;
 import org.meep.entities.Vehicle;
-import org.meep.feign.MeepApi;
-import org.meep.feign.dto.VehicleDto;
+//import org.meep.feign.MeepApi;
+//import org.meep.feign.dto.VehicleDto;
 import org.meep.gateway.VehicleGateway;
 import org.springframework.stereotype.Repository;
 import reactor.core.publisher.Flux;
@@ -12,7 +12,7 @@ import reactor.core.publisher.Flux;
 @AllArgsConstructor
 public class VehiclesGatewayImpl implements VehicleGateway {
 
-    private final MeepApi meepApi;
+    //private final MeepApi meepApi;
 
     @Override
     public Flux<Vehicle> getVehicles(String userAgent) {
@@ -20,7 +20,7 @@ public class VehiclesGatewayImpl implements VehicleGateway {
         return Flux.just(Vehicle.builder().build());
     }
 
-    private Vehicle vehicleDtoToVehicle(VehicleDto vehicleDto){
+    /*private Vehicle vehicleDtoToVehicle(VehicleDto vehicleDto){
         return Vehicle.builder()
                 .id(vehicleDto.getId())
                 .name(vehicleDto.getName())
@@ -37,5 +37,5 @@ public class VehiclesGatewayImpl implements VehicleGateway {
                 .resourceType(vehicleDto.getResourceType())
                 .companyZoneId(vehicleDto.getCompanyZoneId())
                 .build();
-    }
+    }*/
 }
