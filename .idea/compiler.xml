@@ -10,17 +10,15 @@
         </processorPath>
         <module name="meep.domain-model.main" />
         <module name="meep.entry-points-reactive-web.test" />
-        <module name="meep.driven-adapters-webclient-repository.main" />
-        <module name="meep.domain-usecase.main" />
-        <module name="meep.driven-adapters-feign-repository.main" />
-        <module name="meep.domain-usecase.test" />
-        <module name="meep.driven-adapters-feign-repository.test" />
         <module name="meep.applications-meep.init.test" />
+        <module name="meep.driven-adapters-webclient-repository.main" />
         <module name="meep.driven-adapters-adapters-repository.test" />
         <module name="meep.driven-adapters-webclient-repository.test" />
         <module name="meep.domain-model.test" />
         <module name="meep.driven-adapters-adapters-repository.main" />
+        <module name="meep.domain-usecase.main" />
         <module name="meep.applications-meep.init.main" />
+        <module name="meep.domain-usecase.test" />
         <module name="meep.entry-points-reactive-web.main" />
       </profile>
     </annotationProcessing>

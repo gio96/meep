@@ -16,7 +16,6 @@
             <option value="$PROJECT_DIR$/domain/model" />
             <option value="$PROJECT_DIR$/domain/usecase" />
             <option value="$PROJECT_DIR$/infrastructure/driven-adapters/adapters-repository" />
-            <option value="$PROJECT_DIR$/infrastructure/driven-adapters/feign-repository" />
             <option value="$PROJECT_DIR$/infrastructure/driven-adapters/webclient-repository" />
             <option value="$PROJECT_DIR$/infrastructure/entry-points/reactive-web" />
           </set>

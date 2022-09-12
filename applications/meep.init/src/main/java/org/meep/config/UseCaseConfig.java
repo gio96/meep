@@ -15,7 +15,6 @@ public class UseCaseConfig {
     }
 
     @Bean
-    //@LoadBalanced
     WebClient.Builder builder() {
         return WebClient.builder();
     }

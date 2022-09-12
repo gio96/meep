@@ -1,7 +1,0 @@
-org/meep/feign/dto/VehicleDto.java
- org.meep.feign.dto.VehicleDto
- org.meep.feign.dto.VehicleDto$VehicleDtoBuilder
-org/meep/feign/MeepApi.java
- org.meep.feign.MeepApi
-org/meep/feign/config/FeignConfig.java
- org.meep.feign.config.FeignConfig
