@@ -23,6 +23,8 @@ subprojects {
         testAnnotationProcessor 'org.projectlombok:lombok:1.18.22'
         testCompileOnly 'org.projectlombok:lombok:1.18.22'
 
+        implementation 'org.springframework.boot:spring-boot-starter-webflux'
+
         //implementation "com.playtika.reactivefeign:feign-reactor-spring-cloud-starter:3.2.0"
         //implementation 'org.springframework.cloud:spring-cloud-starter-openfeign'
         //implementation group: 'org.springframework.cloud', name: 'spring-cloud-loadbalancer', version: '3.1.4'

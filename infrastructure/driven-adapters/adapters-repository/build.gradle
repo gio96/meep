@@ -1,6 +1,7 @@
 dependencies {
     implementation project(':domain-model')
     //implementation project(':driven-adapters-feign-repository')
+    implementation project(':driven-adapters-webclient-repository')
     implementation 'org.springframework:spring-context:5.2.4.RELEASE'
     //implementation 'org.springframework:spring-context:5.2.0.RELEASE'
 }
