@@ -25,8 +25,7 @@ public class VehiclesUseCase {
 
 
     public Flux<ServerSentEvent<String>> getVehicles() {
-        //return Flux.interval(Duration.ofSeconds(30))
-        return Flux.interval(Duration.ofSeconds(5))
+        return Flux.interval(Duration.ofSeconds(30))
                 .flatMap(aLong -> convertVehicleToJson(vehicleGateway.getVehicles(USERAGENT)))
                 .map(json -> ServerSentEvent.<String>builder()
                         .id(UUID.randomUUID().toString())
